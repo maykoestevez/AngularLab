@@ -5,8 +5,6 @@ import { NgModule } from '@angular/core';
     declarations: [],
     exports: [],
     providers: []
-
-
 })
 
 export class DomainModule {

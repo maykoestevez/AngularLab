@@ -18,7 +18,7 @@ import { NgModule } from '@angular/core';
 // Entry component
 import { AppComponent } from './app.component';
 
-
+// Ang Module decorator with meta data
 @NgModule({
 
   // To use components directives and pipe
