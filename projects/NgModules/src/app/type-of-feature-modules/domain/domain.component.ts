@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: './domain.component.html'
+    template: `{{title}}`
 
 })
 export class DomainComponent {
