@@ -5,7 +5,7 @@ const routes: Routes = []; // routes definitions
 
 @NgModule({
 
-    imports: [RouterModule.forChild(routes)] //Adding router configuratione
+    imports: [RouterModule.forChild(routes)] // Adding router configuratione
 })
 
 export class RoutingModule { }
