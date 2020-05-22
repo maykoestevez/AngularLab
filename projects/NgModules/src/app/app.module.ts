@@ -17,6 +17,7 @@ import { NgModule } from '@angular/core';
 
 // Entry component
 import { AppComponent } from './app.component';
+import { ForRootModule } from './providing-dependencies/for-root.module';
 
 // Ang Module decorator with meta data
 @NgModule({
@@ -29,7 +30,8 @@ import { AppComponent } from './app.component';
   // Place to import external module
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ForRootModule.forRoot()// It rerurn a module with providers, Injecting the providers of this module here
   ],
 
   // To inject services

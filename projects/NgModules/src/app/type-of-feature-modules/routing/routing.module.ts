@@ -5,7 +5,9 @@ const routes: Routes = []; // routes definitions
 
 @NgModule({
 
-    imports: [RouterModule.forChild(routes)] // Adding router configuratione
+    // For child does not expose router service
+    // intead the app use the use that was injected in the app.module
+    imports: [RouterModule.forChild(routes)] // Adding router configuration
 })
 
 export class RoutingModule { }
