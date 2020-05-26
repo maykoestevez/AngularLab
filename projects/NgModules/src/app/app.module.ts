@@ -18,6 +18,7 @@ import { NgModule } from '@angular/core';
 // Entry component
 import { AppComponent } from './app.component';
 import { ForRootModule } from './providing-dependencies/for-root.module';
+import { AppRoutingModule } from './app-routing.module';
 
 // Ang Module decorator with meta data
 @NgModule({
@@ -31,6 +32,7 @@ import { ForRootModule } from './providing-dependencies/for-root.module';
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule,
     ForRootModule.forRoot()// It rerurn a module with providers, Injecting the providers of this module here
   ],
 
