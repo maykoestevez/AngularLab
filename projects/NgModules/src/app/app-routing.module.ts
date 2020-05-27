@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@Angular/router';
-import { LazyLoadModule } from './lazy-loading/lazy-load.module';
+import { LazyLoadModule } from '../../../LazyLoading/src/app/lazy-loading/lazy-load.module';
 
 
 const routes: Routes = [
-    { path: 'lazy', loadChildren: () => import('./lazy-loading/lazy-load.module').then(x => x.LazyLoadModule) }
+    {}
 ];
 
 NgModule({
