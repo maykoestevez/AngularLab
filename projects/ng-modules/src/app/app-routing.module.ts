@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@Angular/router';
-import { LazyLoadModule } from '../../../LazyLoading/src/app/lazy-loading/lazy-load.module';
+import { RouterModule, Routes } from '@angular/router';
+
 
 
 const routes: Routes = [
