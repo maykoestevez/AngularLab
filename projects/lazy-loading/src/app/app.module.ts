@@ -3,13 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
-import { RouterModule, Routes } from '@angular/router';
+
+import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: AppComponent },
-
+  { path: '', redirectTo: 'customer', pathMatch: 'full' },
   { path: 'customer', loadChildren: () => import('./customer/customer.module').then(x => x.CustomerModule) },
+  { path: 'product', loadChildren: () => import('./product/product.module').then(x => x.ProductModule) }
 
 ];
 
@@ -19,7 +19,9 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes, 
+      { preloadingStrategy: PreloadAllModules }// Preload all lazy module to improve the UX
+      )
   ],
   providers: [],
   bootstrap: [AppComponent]
